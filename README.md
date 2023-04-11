@@ -6,6 +6,7 @@
   - `cat` is replaced with `bat` from https://github.com/sharkdp/bat
   
 ## Added Aliases
-  - `restart`   = `shutdown -r now`
-  - `shutdown`  = `shutdown now`
+  - `restart` = `shutdown -r now`
+  - `shutdown` = `shutdown now`
+  - `cd..` = `cd ..`
   
