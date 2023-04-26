@@ -126,7 +126,17 @@ alias md="glow"
 alias ls="colorls --all --sort-dirs"
 alias shutdown="shutdown now"
 alias cat="bat"
+alias code="code-insiders"
 alias vscode="code"
+
+# DISTRO SPECIFIC
+
+if lsb_release -a | grep -q "Arch";
+then
+alias cat="bat"
+else
+alias cat="batcat" # Non-Arch goes by batcat
+fi
 
 # ENVIROMENT VARIABLES
 

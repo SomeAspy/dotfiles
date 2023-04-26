@@ -8,7 +8,11 @@
 
 ## Added Aliases
 
--   `restart` = `shutdown -r now`
--   `shutdown` = `shutdown now`
 -   `cd..` = `cd ..`
+-   `restart` = `shutdown -r now`
+-   `md` = `glow`
+-   `ls` = `colorls --all --sort-dirs`
+-   `shutdown` = `shutdown now`
+-   `code` = `code-insiders`
 -   `vscode` = `code`
+-   `cat` = `bat` OR `cat` = `catbat` on non-arch distros
