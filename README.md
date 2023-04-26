@@ -16,3 +16,4 @@
 -   `code` = `code-insiders`
 -   `vscode` = `code`
 -   `cat` = `bat` OR `cat` = `catbat` on non-arch distros
+-   `gpgfix` = `export GPG_TTY=$(tty)` - Quick on the go fix for GPG

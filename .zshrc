@@ -128,6 +128,7 @@ alias shutdown="shutdown now"
 alias cat="bat"
 alias code="code-insiders"
 alias vscode="code"
+alias gpgfix="export GPG_TTY=$(tty)"
 
 # DISTRO SPECIFIC
 
@@ -141,6 +142,7 @@ fi
 # ENVIROMENT VARIABLES
 
 export GPG_TTY=$(tty)
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
