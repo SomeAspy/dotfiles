@@ -121,10 +121,8 @@ export PATH
 # ALIASES
 
 alias cd..="cd .."
-alias restart="shutdown -r now"
 alias md="glow"
 alias ls="colorls --all --sort-dirs"
-alias shutdown="shutdown now"
 alias code="code-insiders"
 alias vscode="code"
 alias gpgfix="export GPG_TTY=$(tty)"
