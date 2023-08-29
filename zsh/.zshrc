@@ -73,8 +73,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ./.p10k.zsh
+ZSH_DOTFILES="$( dirname "$( readlink -f "$0" )" )"
+source "$ZSH_DOTFILES/.p10k.zsh"
 
 path+="/home/aiden/.local/bin"
 path+="/home/aiden/.local/share/gem/ruby/3.0.0/bin"
@@ -89,7 +89,7 @@ alias cd..="cd .."
 alias md="glow"
 alias ls="colorls --all --sort-dirs"
 alias code="code-insiders"
-alias vscode="code"
+alias vscode="code-insiders"
 alias gpgfix="export GPG_TTY=$(tty)"
 
 # DISTRO SPECIFIC
