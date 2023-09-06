@@ -1,0 +1,8 @@
+[down.sh-3.desktop][Global Shortcuts]
+_launch=Volume Down
+
+[mute.sh-3.desktop][Global Shortcuts]
+_launch=Volume Mute
+
+[up.sh-3.desktop][Global Shortcuts]
+_launch=Volume Up
