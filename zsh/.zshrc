@@ -18,7 +18,9 @@ ENABLE_CORRECTION="true"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions autoupdate)
+export UPDATE_ZSH_DAYS=1
+ZSH_CUSTOM_AUTOUPDATE_NUM_WORKERS=8
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,15 +29,15 @@ ZSH_DOTFILES="$( dirname "$( readlink -f "$0" )" )"
 source "$ZSH_DOTFILES/.p10k.zsh"
 source "$ZSH_DOTFILES/aliases.zsh" # ALIASES
 
-path+="/home/aiden/.local/bin"
-path+="/home/aiden/.local/share/gem/ruby/3.0.0/bin"
+path+="$HOME/.local/bin"
+path+="$HOME/.local/share/gem/ruby/3.0.0/bin"
 path+="/usr/share/applications"
 
 export PATH
 
 # ENVIROMENT VARIABLES
 
-
+export GPG_TTY=$(tty)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
