@@ -10,6 +10,7 @@
 - [HP Envy x360 (dr1012dx)](https://support.hp.com/us-en/document/c06449252)
 - [MSI X570 Gaming Edge WiFi](https://www.msi.com/Motherboard/MPG-X570-GAMING-EDGE-WIFI) with [AMD RX 6650XT](https://www.xfxforce.com/shop/xfx-speedster-swft210-amd-radeon-tm-rx-6650-xt-core)
 - [Dell R910](https://i.dell.com/sites/content/shared-content/data-sheets/en/Documents/R910-SpecSheet.pdf)
+- [Dell R430](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/us/Dell-PowerEdge-R430-Spec-Sheet.pdf)
 
 ## What's inside
 
@@ -19,7 +20,12 @@
 - [Notes](/docs)
 - [Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)
 
-Quick install with [`/install.sh`](/install.sh) (Untested as of writing)
+```
+git clone https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
+git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins "$ZSH_CUSTOM/plugins/autoupdate"
+```
 
 ## Notable changes to expected ZSH behavior
 
