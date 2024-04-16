@@ -1,6 +1,0 @@
-[Touchpad pressure override]
-MatchUdevType=touchpad
-MatchName=*Elan Touchpad # According to reddit, there is another type, that doesn't match mine. It has the same problem though.
-MatchDMIModalias=dmi:*svnLENOVO:*:pvrThinkPadE14Gen2*
-AttrPalmPressureThreshold=300
-AttrPressureRange=10:8
