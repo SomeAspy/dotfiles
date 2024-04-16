@@ -12,7 +12,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 
-zstyle ':omz:update' frequency 1
+zstyle ':omz:update' frequency 7
+
+ZSH_CUSTOM_AUTOUPDATE_QUIET=true
 
 ENABLE_CORRECTION="true"
 
