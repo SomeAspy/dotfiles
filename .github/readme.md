@@ -18,7 +18,7 @@
 - [ZSH Configs](/zsh)
 - [Themes](/css)
 - [Notes](/docs)
-- [Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)
+- ~~[Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)~~ [merged into libinput](https://gitlab.freedesktop.org/libinput/libinput/-/commit/5abe45cd497557c6b3c3cdd4d40420f21416160d)
 
 ```
 git clone https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k"
