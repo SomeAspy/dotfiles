@@ -1,6 +1,4 @@
 alias cd..="cd .."
-alias code="code-insiders"
-alias vscode="code-insiders"
 alias gpgfix="export GPG_TTY=$(tty)"
 alias grep='grep --color=auto'
 
