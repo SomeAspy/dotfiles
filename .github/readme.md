@@ -6,6 +6,7 @@
 
 - Arch Linux
 - Debian latest
+- Ubuntu latest
 - [ThinkPad E14 Gen2 (20TA004MUS)](https://www.cdw.com/product/lenovo-thinkpad-e14-gen-5-14-intel-core-i7-1355u-16-gb-ram-512-g/7520163)
 - [HP Envy x360 (dr1012dx)](https://support.hp.com/us-en/document/c06449252)
 - [MSI X570 Gaming Edge WiFi](https://www.msi.com/Motherboard/MPG-X570-GAMING-EDGE-WIFI) with [AMD RX 6650XT](https://www.xfxforce.com/shop/xfx-speedster-swft210-amd-radeon-tm-rx-6650-xt-core)
@@ -18,7 +19,7 @@
 - [ZSH Configs](/zsh)
 - [Themes](/css)
 - [Notes](/docs)
-- [Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)
+- ~~[Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)~~ [merged into libinput](https://gitlab.freedesktop.org/libinput/libinput/-/commit/5abe45cd497557c6b3c3cdd4d40420f21416160d)
 
 ```
 git clone https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k"
