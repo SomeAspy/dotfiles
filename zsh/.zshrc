@@ -1,45 +1,41 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Path to your oh-my-zsh installation.
+# oh-my-zsh path
 export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-
-zstyle ':omz:update' mode auto      # update automatically without asking
-
-zstyle ':omz:update' frequency 7
-
-ZSH_CUSTOM_AUTOUPDATE_QUIET=true
+zstyle ':omz:update' mode auto # update automatically without asking
+zstyle ':omz:update' verbose silent # only errors
 
 ENABLE_CORRECTION="true"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions autoupdate)
-export UPDATE_ZSH_DAYS=1
+plugins=(zsh-syntax-highlighting zsh-autosuggestions autoupdate)
+
 ZSH_CUSTOM_AUTOUPDATE_NUM_WORKERS=8
+ZSH_CUSTOM_AUTOUPDATE_QUIET=true
 
 source $ZSH/oh-my-zsh.sh
 
 ZSH_DOTFILES="$( dirname "$( readlink -f "$0" )" )"
 
-source "$ZSH_DOTFILES/.p10k.zsh"
-source "$ZSH_DOTFILES/aliases.zsh" # ALIASES
+source "$HOME/dotfiles/zsh/.p10k.zsh"
+source "$HOME/dotfiles/zsh/aliases.zsh" # ALIASES
 
 path+="$HOME/.local/bin"
-path+="$HOME/.local/share/gem/ruby/3.0.0/bin"
 path+="/usr/share/applications"
 
 export PATH
 
-# ENVIROMENT VARIABLES
+#SECTION - Environment Variables 
 
 export GPG_TTY=$(tty)
+
+#SECTION End (Programs will probably append to here)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

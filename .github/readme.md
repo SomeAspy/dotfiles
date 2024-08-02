@@ -17,11 +17,10 @@
 
 - [Aliases](/zsh/aliases.zsh)
 - [ZSH Configs](/zsh)
-- [Themes](/css)
 - [Notes](/docs)
 - ~~[Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)~~ [merged into libinput](https://gitlab.freedesktop.org/libinput/libinput/-/commit/5abe45cd497557c6b3c3cdd4d40420f21416160d)
 
-```
+```zsh
 git clone https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
@@ -30,20 +29,20 @@ git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins "$ZSH_CUSTOM/p
 
 ## Notable changes to expected ZSH behavior
 
-- `md` is replaced with `glow` from <https://github.com/charmbracelet/glow>
-- `ls` is replaced with `colorls --all --sort-dirs` from <https://github.com/athityakumar/colorls>
+- `md` is replaced with `glow` from <https://github.com/charmbracelet/glow> (if installed)
 - `grep` has `--color=auto` appended
 
 ## Added Aliases
 
 - `cd..` = `cd ..`
-- `restart` = `shutdown -r now`
 - `md` = `glow`
-- `ls` = `colorls -a --gs`
-- `shutdown` = `shutdown now`
-- `code` = `code-insiders`
-- `vscode` = `code-insiders`
-- `gpgfix` = `export GPG_TTY=$(tty)` - Quick on the go fix for GPG
+- `grep` = `grep --color=auto`
+
+## Expected Applications
+
+- [Glow](https://github.com/charmbracelet/glow)
+- [NVM](https://github.com/nvm-sh/nvm)
+- [SDKMAN!](https://sdkman.io/)
 
 ## ZSH Plugins
 

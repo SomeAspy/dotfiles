@@ -10,6 +10,9 @@
         "hyprstart",
         "libinput",
         "Modalias",
-        "Udev"
+        "powerlevel",
+        "SDKMAN",
+        "Udev",
+        "zstyle"
     ]
 }
