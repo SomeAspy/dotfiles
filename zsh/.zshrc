@@ -21,8 +21,6 @@ ZSH_CUSTOM_AUTOUPDATE_QUIET=true
 
 source $ZSH/oh-my-zsh.sh
 
-ZSH_DOTFILES="$( dirname "$( readlink -f "$0" )" )"
-
 source "$HOME/dotfiles/zsh/.p10k.zsh"
 source "$HOME/dotfiles/zsh/aliases.zsh" # ALIASES
 
