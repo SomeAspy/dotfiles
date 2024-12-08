@@ -24,11 +24,6 @@ source $ZSH/oh-my-zsh.sh
 source "$HOME/dotfiles/zsh/.p10k.zsh"
 source "$HOME/dotfiles/zsh/aliases.zsh" # ALIASES
 
-path+="$HOME/.local/bin"
-path+="/usr/share/applications"
-
-export PATH
-
 #SECTION - Environment Variables 
 
 export GPG_TTY=$(tty)
