@@ -12,6 +12,8 @@
 - [MSI X570 Gaming Edge WiFi](https://www.msi.com/Motherboard/MPG-X570-GAMING-EDGE-WIFI) with [AMD RX 6650XT](https://www.xfxforce.com/shop/xfx-speedster-swft210-amd-radeon-tm-rx-6650-xt-core)
 - [Dell R910](https://i.dell.com/sites/content/shared-content/data-sheets/en/Documents/R910-SpecSheet.pdf)
 - [Dell R430](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/us/Dell-PowerEdge-R430-Spec-Sheet.pdf)
+- [iPhone 8](https://support.apple.com/en-us/111976) on iOS 16.7.8
+- [M1 MacBook Pro 2020](https://support.apple.com/en-us/111893) on MacOS Latest via [iTerm2](https://iterm2.com/)
 
 ## What's inside
 
