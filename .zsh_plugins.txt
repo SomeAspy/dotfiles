@@ -1,0 +1,11 @@
+# P10k - https://github.com/romkatv/powerlevel10k
+romkatv/powerlevel10k
+
+# Autosuggestions - https://github.com/zsh-users/zsh-autosuggestions
+zsh-users/zsh-autosuggestions
+
+# Syntax Highlighting - https://github.com/zdharma-continuum/fast-syntax-highlighting
+zdharma-continuum/fast-syntax-highlighting
+
+# More completions for ZSH - https://github.com/zsh-users/zsh-completions
+zsh-users/zsh-completions
