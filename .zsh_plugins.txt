@@ -9,3 +9,6 @@ zdharma-continuum/fast-syntax-highlighting
 
 # More completions for ZSH - https://github.com/zsh-users/zsh-completions
 zsh-users/zsh-completions
+
+# OMZ
+ohmyzsh/ohmyzsh
