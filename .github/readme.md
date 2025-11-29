@@ -14,39 +14,29 @@
 - [Dell R430](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/us/Dell-PowerEdge-R430-Spec-Sheet.pdf)
 - [iPhone 8](https://support.apple.com/en-us/111976) on iOS 16.7.8
 - [M1 MacBook Pro 2020](https://support.apple.com/en-us/111893) on MacOS Latest via [iTerm2](https://iterm2.com/)
+- Asus B650 Edge WiFi with AMD RX 9070
+- ThinkPad X1 Carbon Gen 9
 
 ## What's inside
 
-- [Aliases](/zsh/aliases.zsh)
-- [ZSH Configs](/zsh)
-- [Notes](/docs)
 - ~~[Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)~~ [merged into libinput](https://gitlab.freedesktop.org/libinput/libinput/-/commit/5abe45cd497557c6b3c3cdd4d40420f21416160d)
-
-```zsh
-git clone https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
-git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
-git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins "$ZSH_CUSTOM/plugins/autoupdate"
-```
+- P10K Theme
 
 ## Notable changes to expected ZSH behavior
 
-- `md` is replaced with `glow` from <https://github.com/charmbracelet/glow> (if installed)
-- `grep` has `--color=auto` appended
+- If Bitwarden CLI is detected, it is used as the SSH Authentication
 
 ## Added Aliases
 
-- `cd..` = `cd ..`
-- `md` = `glow`
-- `grep` = `grep --color=auto`
+N/A
 
 ## Expected Applications
 
-- [Glow](https://github.com/charmbracelet/glow)
-- [NVM](https://github.com/nvm-sh/nvm)
-- [SDKMAN!](https://sdkman.io/)
+- [Antidote](https://github.com/mattmc3/antidote)
 
-## ZSH Plugins
+## Antidote Plugins
+
+See [./zsh_plugins.txt](../.zsh_plugins.txt)
 
 - ### [P10k](https://github.com/romkatv/powerlevel10k)
 
@@ -54,4 +44,4 @@ git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins "$ZSH_CUSTOM/p
 
 - ### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-- ### [autoupdate-zsh-plugin](https://github.com/tamcore/autoupdate-oh-my-zsh-plugins)
+- ### [Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh)
