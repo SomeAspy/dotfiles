@@ -1,20 +1,28 @@
-DOTDIR=$HOME/dotfiles
+ZDOTDIR=$HOME/dotfiles
 
-PROMPT='%K{60}%B%F{254} %n@%m %b%F{60}%K{67}%F{255} %B%20<...<%~ %k%F{67}%f '
+export PATH="$HOME/.local/bin:$PATH"
+export FZF_DEFAULT_OPTS='--height 10%'
 
-source $DOTDIR/omz-behaviors.zsh
+PROMPT='%K{60}%B%F{254} %n@%m %b%F{60}%K{67}%F{255} %B%20<...<%~ %k%F{67}%f%k '
+
+# Sane History
+HISTFILE="$ZDOTDIR/.zsh_history"
+HISTSIZE=50000
+SAVEHIST=10000
+setopt APPEND_HISTORY SHARE_HISTORY HIST_IGNORE_ALL_DUPS
+
+# Completions
+eval "$(dircolors -b)"
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Antidote plugin loader
-if [[ ! -f $zsh_plugins.zsh ]] || [[ $zsh_plugins_txt -nt $zsh_plugins.zsh ]]; then
-  antidote bundle < $zsh_plugins_txt > $zsh_plugins.zsh
-fi
-source $zsh_plugins.zsh
+source '/usr/share/zsh-antidote/antidote.zsh'
+antidote load $ZDOTDIR/.zsh_plugins.txt
 
-# History ops
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+# Completions
+bindkey '^[[A' fzf_history_search
+autoload -Uz compinit
+compinit
 
-# SSH Auth Backend
-if [ -S "$HOME/.bitwarden-ssh-agent.sock" ]; then
-  export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
-fi
+# Addons
+source $ZDOTDIR/addons.zsh
