@@ -20,11 +20,16 @@
 ## What's inside
 
 - ~~[Quirks for `Elan Touchpad`](/etc/libinput/local-overrides.quirks)~~ [merged into libinput](https://gitlab.freedesktop.org/libinput/libinput/-/commit/5abe45cd497557c6b3c3cdd4d40420f21416160d)
-- P10K Theme
+- Basic theming I spent like an hour on
 
 ## Notable changes to expected ZSH behavior
 
-- If Bitwarden CLI is detected, it is used as the SSH Authentication
+- If Bitwarden SSH auth socket is detected, it is used as the SSH authentication
+- Some OMZ defaults are implemented
+        - `.zsh_history` file handling
+        - History Search
+        - Auto CD
+        - Colors
 
 ## Added Aliases
 
@@ -33,15 +38,12 @@ N/A
 ## Expected Applications
 
 - [Antidote](https://github.com/mattmc3/antidote)
+- [Git](https://git-scm.com/)
 
 ## Antidote Plugins
 
 See [./zsh_plugins.txt](../.zsh_plugins.txt)
 
-- ### [P10k](https://github.com/romkatv/powerlevel10k)
-
 - ### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 - ### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-
-- ### [Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh)
