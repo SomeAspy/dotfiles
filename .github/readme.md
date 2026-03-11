@@ -28,7 +28,7 @@ The best way to install is to clone this repo to your home directory and **soft*
 
 ## Notable changes to expected ZSH behavior
 
-- If Bitwarden SSH agent is detected, it is used as the SSH agent
+- If [rbw](https://github.com/doy/rbw) SSH agent is detected, it is used as the SSH agent
 - `ZDOTDIR` = `$HOME/dotfiles`
 - `$HOME/local/bin` is added to `PATH`
 - Some OMZ defaults are implemented

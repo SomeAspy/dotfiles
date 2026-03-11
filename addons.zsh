@@ -1,6 +1,6 @@
-# Bitwarden SSH agent
-if [ -S "$HOME/.bitwarden-ssh-agent.sock" ]; then
-  export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
+# Bitwarden SSH agent (rbw)
+if [ -S "$XDG_RUNTIME_DIR/rbw/ssh-agent-socket" ]; then
+    export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/rbw/ssh-agent-socket"
 fi
 
 # bat
