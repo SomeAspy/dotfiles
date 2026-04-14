@@ -1,5 +1,6 @@
 # Bitwarden SSH agent (rbw)
-if [ -S "$XDG_RUNTIME_DIR/rbw/ssh-agent-socket" ]; then
+if command -v rbw &>/dev/null
+then
     export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/rbw/ssh-agent-socket"
 fi
 
@@ -13,7 +14,7 @@ fi
 # ripgrep
 if command -v rg > /dev/null; then
     alias grep=rg
-fi
+fi  
 
 # eza
 if command -v eza > /dev/null; then
