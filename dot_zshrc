@@ -15,7 +15,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Antidote plugin loader
 source '/usr/share/zsh-antidote/antidote.zsh'
-antidote load ./.zsh_plugins.txt
+antidote load ~/.zsh_plugins.txt
 
 # Completions
 bindkey '^[[A' fzf_history_search
